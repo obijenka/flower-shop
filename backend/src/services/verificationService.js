@@ -1,5 +1,5 @@
 const crypto = require('crypto')
-const pool = require('../db')
+const pool = require('../db/index')
 const { issueJwt, normalizeEmail, getUserById } = require('./authService')
 const { sendVerificationCodeEmail } = require('./emailService')
 

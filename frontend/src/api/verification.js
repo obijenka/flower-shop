@@ -1,5 +1,5 @@
 import { api } from './client'
 
-export const sendVerificationCode = (email) => api.post('/auth/verification/send', { email })
+export const sendVerificationCode = (email) => api.post('/verification/send', { email })
 
-export const verifyEmailCode = ({ email, code }) => api.post('/auth/verification/verify', { email, code })
+export const verifyEmailCode = ({ email, code }) => api.post('/verification/verify', { email, code })

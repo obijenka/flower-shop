@@ -1,6 +1,6 @@
 const { OAuth2Client } = require('google-auth-library')
 const jwt = require('jsonwebtoken')
-const pool = require('../db')
+const pool = require('../db/index')
 
 function getFrontendUrl() {
   return process.env.FRONTEND_URL || 'http://localhost:5173'
