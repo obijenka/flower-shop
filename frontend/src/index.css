@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --color-custom-dark: #333333;
+    --color-custom-purple: #956D84;
+    --container-custom: 1420px;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-custom-dark text-sm font-light;
+    font-family: 'Museo Sans Cyrl', sans-serif;
+  }
+}
+
+
+
