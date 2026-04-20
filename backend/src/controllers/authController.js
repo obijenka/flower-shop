@@ -1,6 +1,5 @@
 const authService = require('../services/authService')
 const googleAuthService = require('../services/googleAuthService')
-const verificationService = require('../services/verificationService')
 
 function sendError(res, err) {
   const status = err.status || 500
@@ -18,8 +17,6 @@ async function register(req, res) {
   try {
     const { email, name, password } = req.body
     const { user } = await authService.register({ email, name, password })
-
-    await verificationService.sendVerificationCode(user.email)
 
     return res.status(201).json({
       message: 'Регистрация успешна. Подтвердите почту',

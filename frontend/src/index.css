@@ -3,7 +3,7 @@
 @theme {
     --color-custom-dark: #333333;
     --color-custom-purple: #956D84;
-    --container-custom: 1420px;
+    --container-custom: 1220px;
 }
 
 @layer base {
