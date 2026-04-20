@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Container from "./ui/Container";
+import Container from "../ui/Container";
 
-import heroDiscounts from "../assets/hero/hero-discounts.jpg";
-import heroRoses from "../assets/hero/hero-roses.png";
-import heroGifts from "../assets/hero/hero-gifts.png";
-import heroBaskets from "../assets/hero/hero-baskets.png";
-import heroFlowersInBox from "../assets/hero/hero-flowers-in-box.png";
+import heroDiscounts from "../../assets/hero/hero-discounts.jpg";
+import heroRoses from "../../assets/hero/hero-roses.png";
+import heroGifts from "../../assets/hero/hero-gifts.png";
+import heroBaskets from "../../assets/hero/hero-baskets.png";
+import heroFlowersInBox from "../../assets/hero/hero-flowers-in-box.png";
 
 function Tile({ to, imgSrc, label }) {
   return (
